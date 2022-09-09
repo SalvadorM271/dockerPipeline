@@ -1,0 +1,25 @@
+name: "create a pull request from develop to main"
+
+on:
+  push:
+    branches:
+      - "develop"
+
+#this action creates a pull request from the develop to the main branch
+#but before that runs tests to check if there are no conflicts in the push files
+
+jobs:
+  mainPromotion:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: main
+      - name: Reset promotion branch
+        run: |
+          git fetch origin develop:develop
+          git reset --hard develop
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          branch: main-release #creates a temporary branch for the pull request
