@@ -3,8 +3,6 @@ name: Build and upload image
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 
 jobs:
   build:
@@ -19,7 +17,6 @@ jobs:
       name: Build & push Docker image
       with:
         image: salvadorm271/docker_pipeline
-        tags: v1, latest
         registry: docker.io
         dockerfile: Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
