@@ -38,6 +38,7 @@ jobs:
       id: meta  
       with:
         images: salvadorm271/docker_pipeline
+      run: echo ${{ steps.meta.outputs.tags }}
 
     - uses: mr-smithers-excellent/docker-build-push@v5
       name: Build & push Docker image
