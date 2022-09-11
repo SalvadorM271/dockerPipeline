@@ -4,11 +4,11 @@ on:
   push:
     branches: [ "main" ]
     tags:
-        - 'v*'
+        - 'v*' #added tags so the action can now which tag to use in docker 
 
 jobs:
-  
-  build:
+  # adds a version when we push to main
+  build: 
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -22,7 +22,7 @@ jobs:
         DEFAULT_BUMP: major
   
   publish:
-
+    # waits for build to finish before starting this action
     needs: build
 
     runs-on: ubuntu-latest
