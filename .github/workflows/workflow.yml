@@ -31,8 +31,10 @@ jobs:
     - uses: actions/checkout@v2
       name: Check out code
 
+    #get tag from the git hub repo
+
     - uses: docker/metadata-action@v4
-      name: Docker meta
+      name: get github tag
       id: meta  
       with:
         images: salvadorm271/docker_pipeline
