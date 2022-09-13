@@ -34,7 +34,7 @@ app.get("/about", (req, res) => {
 
 app.post("/result", (req, res) => {
   if (req.body.color.trim().toUpperCase() === "BLUE") {
-    res.send("Congrats, that is correct.")
+    res.send("Yeah, that is correct.")
   } else {
     res.send("Incorrect, please try again.")
   }
