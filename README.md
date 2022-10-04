@@ -50,3 +50,5 @@ an image base on the code to a repository on docker hub.
 
 ## Credits for the source code use to test the pipeline
 [LearnWebCode](https://github.com/LearnWebCode/express-youtube-basics) 
+
+![diagram](https://drive.google.com/file/d/1Qe5QK-KLGUldMXFeR186WFAhdKE8UWFT/view?usp=sharing)
