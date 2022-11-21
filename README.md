@@ -49,4 +49,8 @@ a pull request to add our changes into the main branch, once this request is app
 an image base on the code to a repository on docker hub.
 
 ## Credits for the source code use to test the pipeline
-[LearnWebCode](https://github.com/LearnWebCode/express-youtube-basics) 
+[LearnWebCode](https://github.com/LearnWebCode/express-youtube-basics)
+
+<img src="https://drive.google.com/file/d/1Qe5QK-KLGUldMXFeR186WFAhdKE8UWFT/view?usp=sharing" width="128"/>
+
+![diagram](https://drive.google.com/file/d/1Qe5QK-KLGUldMXFeR186WFAhdKE8UWFT/view?usp=sharing)
